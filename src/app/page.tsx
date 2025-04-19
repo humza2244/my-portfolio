@@ -1,28 +1,55 @@
+'use client'
 import Navbar from './components/navbar'
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative w-full min-h-[50vh] transform-gpu">
+      <div className="bg-white h-[5vh] w-[5vw]"></div>
+      <div className="relative w-full h-screen bg-black">
 
-        {/*Diagonal Effect*/}
-        <div className="w-5 h-5 bg-black rotate-45 absolute top-[12%] left-[3.1%] z-1"></div>
-        <div className="w-5 h-5 bg-white rotate-45 absolute top-[160%] left-[40%] z-1"></div>
 
-        {/*Top Vertical*/}
-        <div className="bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500 w-1 h-155 bg-purple-500 absolute top-[15%] left-[3%]"></div>
-        <div className="bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500 w-1 h-154 bg-purple-500 absolute top-[15%] left-[3.4%]"></div>
+      {/* TYPEWRITE EFFECT*/}
+      <div className="relative w-full h-screen bg-black">
+        {/* TYPEWRITER CENTERED */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-mono z-50">
+          <Typewriter
+            words={['Software Engineer', 'UX/UI Designer', 'Problem Solver', 'Meet: Humza Baig']}
+            loop={false}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </div>
 
-        {/*diagonal rainbow*/}
-        <div className="bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500 w-[0.2%] h-[24.2%] rotate-135 bg-purple-500 absolute bottom-[-69.5%] left-[5.4%]"></div>
-        <div className="bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500 w-[0.2%] h-[26.2%] rotate-135 bg-purple-500 absolute bottom-[-72%] left-[5.2%]"></div>
-
-        {/*bottom left horizontal*/}
-        <div className="bg-gradient-to-r from-red-500 via-yellow-400 to-purple-500 w-[30%] h-[1%] bg-purple-500 absolute top-[167%] left-[7.5%]"></div>
-        <div className="bg-gradient-to-r from-red-500 via-yellow-400 to-purple-500 w-[30%] h-[1%] bg-purple-500 absolute top-[165%] left-[7.5%]"></div>
       </div>
+        
+        {/* VERTICAL LINES LEFT */}
+
+        <div className="absolute left-[5vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
+        <div className="absolute left-[4.6vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
+
+        <div className="absolute left-[5vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[320deg] origin-top-left bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
+        <div className="absolute left-[4.6vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[320deg] origin-top-left bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
+
+
+        {/* VERTICAL LINES RIGHT */}
+        <div className="absolute right-[5vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
+        <div className="absolute right-[4.6vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
+
+        <div className="absolute right-[5vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[45deg] origin-top-right bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
+        <div className="absolute right-[4.6vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[45deg] origin-top-right bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
+
+      </div>
+      
+
+      
+      
+
+
     </>
-  )
-  
+  ) 
 }
