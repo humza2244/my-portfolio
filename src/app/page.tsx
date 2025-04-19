@@ -3,25 +3,38 @@ import Navbar from './components/navbar'
 import { Typewriter } from 'react-simple-typewriter'
 import ParticlesComponent from './components/particles'
 
+const icons = [
+  { name: 'Python', src: '/python.png' },
+  { name: 'JavaScript', src: '/javascript.png' },
+  { name: 'CSS', src: '/CSS.png' },
+  { name: 'HTML', src: '/html.png' },
+  { name: 'React.js', src: '/react.png' }
+]
+
+const iconPositions = [
+  { top: '31%', left: '59%' },
+  { top: '31%', left: '78%' },
+  { top: '66%', left: '83%' },
+  { top: '64%', left: '69%' },
+  { top: '64%', left: '55%' }
+]
+
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-screen overflow-hidden">
+        <ParticlesComponent id="particles" />
 
-        <div className="App">
-          <ParticlesComponent id="particles" />
-        </div>
-
-        {/* TYPEWRITER CENTERED */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-mono z-50">
+        {/* TYPEWRITER CENTERED LEFT */}
+        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-mono z-50 text-white">
           <Typewriter
             words={[
               'Software Engineer',
               'UX/UI Designer',
-              'Problem Solver',
-              'Meet: Humza Baig',
+              'IOS Developer',
+              'Meet: Humza Baig'
             ]}
             loop={false}
             cursor
@@ -32,19 +45,21 @@ export default function Home() {
           />
         </div>
 
-        VERTICAL LINES LEFT
-        <div className="absolute left-[5vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
-        <div className="absolute left-[4.6vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
-        <div className="absolute left-[5vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[320deg] origin-top-left bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
-        <div className="absolute left-[4.6vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[320deg] origin-top-left bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
-
-
-        <div className="absolute right-[5vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
-        <div className="absolute right-[4.6vw] top-[20vh] h-[50vh] w-[0.2vw] bg-gradient-to-b from-red-500 via-yellow-400 to-purple-500"></div>
-        <div className="absolute right-[5vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[45deg] origin-top-right bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
-        <div className="absolute right-[4.6vw] top-[70vh] h-[14vh] w-[0.2vw] rotate-[45deg] origin-top-right bg-gradient-to-b from-purple-500 via-yellow-400 to-red-500"></div>
-       
-
+        {/* FLOATING LANGUAGE ICONS */}
+        {icons.map((icon, index) => (
+          <img
+            key={index}
+            src={icon.src}
+            alt={icon.name}
+            className="w-25 h-25 absolute transition-transform duration-500 hover:scale-110 drop-shadow-[0_0_12px_rgba(255,255,255,0.7)] animate-float"
+            style={{
+              top: iconPositions[index].top,
+              left: iconPositions[index].left,
+              animationDelay: `${index * 0.4}s`,
+              zIndex: 60
+            }}
+          />
+        ))}
       </div>
     </>
   )
