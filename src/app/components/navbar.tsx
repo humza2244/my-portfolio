@@ -16,7 +16,7 @@ export default function Navbar() {
 
         {/* Center - Nav Links */}
         <div className="justify-self-center font-mono flex items-center space-x-10 h-full">
-          <a href="#about" className="hover:text-green-500 hover:scale-105 transition duration-200">About Me</a>
+          <a href="#about" className="hover:text-green-500 hover:scale-105 transition duration-200">About Mee</a>
           <a href="#workexperience" className="hover:text-green-500 hover:scale-105 transition duration-200">Work Experience</a>
           <a href="#projects" className="hover:text-green-400 hover:scale-105 transition duration-200">Projects</a>
           <a href="#links" className="hover:text-green-400 hover:scale-105 transition duration-200">Links</a>
