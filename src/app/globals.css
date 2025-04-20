@@ -32,3 +32,7 @@
 .animate-shooting-star {
   animation: shooting-star 5s linear infinite;
 }
+
+body {
+  cursor: url('/cursor.png'), auto;
+}

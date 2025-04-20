@@ -5,6 +5,7 @@ import TypeWriterEffect from 'react-typewriter-effect'
 import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
 import { ShootingStars } from '../components/ShootingStars'
+import ResumeButton from '../components/resumebutton'
 
 
 export default function AboutPage() {
@@ -14,9 +15,11 @@ export default function AboutPage() {
       <ParticlesComponent id="particles" />
       <ShootingStars quantity={30} />
       <BottomNavbar />
+      <ResumeButton/>
+      
 
       {/* Image container with glowing animated border */}
-      <div className="fixed top-[25%] left-[6%] w-[20vw] h-[55vh] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50">
+      <div className="fixed top-[25%] left-[6%] w-[20vw] h-[55vh] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50 duration-500 hover:scale-104">
         <Image
           src="/myself.jpg"
           alt="Humza"
