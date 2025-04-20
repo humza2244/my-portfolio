@@ -22,7 +22,7 @@ export default function Navbar() {
       }}
     >
       {/* Actual navbar */}
-      <div className="grid grid-cols-3 items-center w-full h-16 px-3 bg-black text-white rounded-bl-2xl rounded-br-2xl rounded-tl-2xl rounded-tr-2xl">
+      <div className="grid grid-cols-[3fr_2fr_1fr] items-center w-full h-16 px-6 bg-black text-white rounded-bl-2xl rounded-br-2xl">
         {/* Left - Logo */}
         <div className="flex items-center space-x-2">
           <Image src="/hblogo.png" alt="hb logo" width={60} height={60} />
@@ -37,6 +37,12 @@ export default function Navbar() {
 
         {/* Center - Nav Links */}
         <div className="justify-self-center font-mono flex items-center space-x-10 h-full">
+          <a
+            href="home"
+            className="hover:text-purple-500 hover:scale-105 transition duration-200"
+          >
+             Home
+          </a>
           <a
             href="about"
             className="hover:text-purple-500 hover:scale-105 transition duration-200"

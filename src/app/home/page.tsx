@@ -1,8 +1,8 @@
 'use client'
-import Navbar from './components/navbar'
+import Navbar from '../components/navbar'
 import { Typewriter } from 'react-simple-typewriter'
-import ParticlesComponent from './components/particles'
-import BottomNavbar from './components/bottomnavbar'
+import ParticlesComponent from '../components/particles'
+import BottomNavbar from '../components/bottomnavbar'
 
 const icons = [
   { name: 'Python', src: '/python.png' },
@@ -31,7 +31,7 @@ export default function Home() {
         <ParticlesComponent id="particles" />
 
         {/* TYPEWRITER CENTERED LEFT */}
-        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-mono z-50 text-white">
+        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-mono z-50 text-white">
           <Typewriter
             words={[
               'Software Engineer',
