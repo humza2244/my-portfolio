@@ -22,56 +22,53 @@ export default function Navbar() {
       }}
     >
       {/* Actual navbar */}
-      <div className="grid grid-cols-[3fr_2fr_1fr] items-center w-full h-16 px-6 bg-black text-white rounded-bl-2xl rounded-br-2xl">
-        {/* Left - Logo */}
-        <div className="flex items-center space-x-2">
-          <Image src="/hblogo.png" alt="hb logo" width={60} height={60} />
-          <a 
-          href = "/"
-          className="text-left font-mono font-bold text-lg hover:text-purple-500 hover:scale-105 transition duration-200">
-            Humza Baig
-          </a>
+      <div className="w-full flex justify-center bg-transparent z-50">
+        <div className="grid grid-cols-[3fr_2fr_1fr] items-center w-full h-16 px-6 bg-black text-white rounded-bl-2xl rounded-br-2xl">
+          {/* Left - Logo */}
+          <div className="flex items-center space-x-2">
+            <Image src="/hblogo.png" alt="hb logo" width={60} height={60} />
+            <a 
+            href = "/"
+            className="text-left font-mono font-bold text-lg hover:text-purple-500 hover:scale-105 transition duration-200">
+              Humza Baig
+            </a>
+          </div>
+
+
+
+          {/* Center - Nav Links */}
+          <div className="justify-self-center font-mono flex items-center space-x-10 h-full">
+            <a
+              href="home"
+              className="hover:text-purple-500 hover:scale-105 transition duration-200"
+            >
+              Home
+            </a>
+            <a
+              href="about"
+              className="hover:text-purple-500 hover:scale-105 transition duration-200"
+            >
+              About Me
+            </a>
+            <a
+              href="workexperience"
+              className="hover:text-purple-500 hover:scale-105 transition duration-200"
+            >
+              Work Experience
+            </a>
+            <a
+              href="projects"
+              className="hover:text-purple-400 hover:scale-105 transition duration-200"
+            >
+              Projects
+            </a>
+          </div>
+
+          {/* Right - Placeholder (with height for balance) */}
+          <div className="text-right h-full"></div>
         </div>
-
-
-
-        {/* Center - Nav Links */}
-        <div className="justify-self-center font-mono flex items-center space-x-10 h-full">
-          <a
-            href="home"
-            className="hover:text-purple-500 hover:scale-105 transition duration-200"
-          >
-             Home
-          </a>
-          <a
-            href="about"
-            className="hover:text-purple-500 hover:scale-105 transition duration-200"
-          >
-            About Me
-          </a>
-          <a
-            href="workexperience"
-            className="hover:text-purple-500 hover:scale-105 transition duration-200"
-          >
-            Work Experience
-          </a>
-          <a
-            href="projects"
-            className="hover:text-purple-400 hover:scale-105 transition duration-200"
-          >
-            Projects
-          </a>
-          <a
-            href="links"
-            className="hover:text-purple-400 hover:scale-105 transition duration-200"
-          >
-            Links
-          </a>
         </div>
-
-        {/* Right - Placeholder (with height for balance) */}
-        <div className="text-right h-full"></div>
-      </div>
+      
     </motion.div>
 
 

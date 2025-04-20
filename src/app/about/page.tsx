@@ -4,15 +4,16 @@ import ParticlesComponent from '../components/particles'
 import TypeWriterEffect from 'react-typewriter-effect'
 import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
-import ShootingStars from '../components/Shootingstars'
+import { ShootingStars } from '../components/ShootingStars'
+
 
 export default function AboutPage() {
   return (
     <>
       <Navbar />
       <ParticlesComponent id="particles" />
+      <ShootingStars quantity={30} />
       <BottomNavbar />
-      <ShootingStars />
 
       {/* Image container with glowing animated border */}
       <div className="fixed top-[25%] left-[6%] w-[20vw] h-[55vh] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50">
@@ -27,7 +28,7 @@ export default function AboutPage() {
 
       {/* Typewriter text on the right */}
       <div className="h-screen w-full flex items-center justify-start">
-        <div className="text-white text-2xl font-mono w-[50%] ml-[35%] whitespace-pre-line z-50">
+        <div className="text-white text-2xl font-mono w-[50%] ml-[35%] whitespace-pre-line animate-float delay-[0.5s] z-50">
           <TypeWriterEffect
             textStyle={{
               fontFamily: 'monospace',
