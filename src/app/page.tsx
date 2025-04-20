@@ -2,6 +2,7 @@
 import Navbar from './components/navbar'
 import { Typewriter } from 'react-simple-typewriter'
 import ParticlesComponent from './components/particles'
+import BottomNavbar from './components/bottomnavbar'
 
 const icons = [
   { name: 'Python', src: '/python.png' },
@@ -23,6 +24,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <BottomNavbar/>
+      
 
       <div className="relative w-full h-screen overflow-hidden">
         <ParticlesComponent id="particles" />

@@ -2,6 +2,7 @@
 import Navbar from '../components/navbar'
 import ParticlesComponent from '../components/particles'
 import TypeWriterEffect from 'react-typewriter-effect'
+import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
 
 
@@ -10,9 +11,10 @@ export default function AboutPage() {
     <>
       <Navbar />
       <ParticlesComponent id="particles" />
+      <BottomNavbar/>
 
       {/* Image container with glowing animated border */}
-      <div className="fixed top-[25%] left-[10%] w-[20%] h-[50%] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50">
+      <div className="fixed top-[30%] left-[8%] w-[18%] h-[50%] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50">
         <Image
           src="/myself.jpg"
           alt="Humza"
@@ -23,7 +25,7 @@ export default function AboutPage() {
       </div>
 
       {/* Typewriter text on the right */}
-      <span className="fixed w-[50%] h-[20%] top-[28%] left-[35%] whitespace-pre-line animate-float">
+      <span className="fixed w-[50%] h-[20%] top-[34%] left-[35%] whitespace-pre-line animate-float">
 
       <TypeWriterEffect
         textStyle={{

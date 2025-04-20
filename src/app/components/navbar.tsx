@@ -28,7 +28,7 @@ export default function Navbar() {
           <Image src="/hblogo.png" alt="hb logo" width={60} height={60} />
           <a 
           href = "/"
-          className="text-left font-mono font-bold text-lg">
+          className="text-left font-mono font-bold text-lg hover:text-purple-500 hover:scale-105 transition duration-200">
             Humza Baig
           </a>
         </div>
@@ -39,25 +39,25 @@ export default function Navbar() {
         <div className="justify-self-center font-mono flex items-center space-x-10 h-full">
           <a
             href="about"
-            className="hover:text-green-500 hover:scale-105 transition duration-200"
+            className="hover:text-purple-500 hover:scale-105 transition duration-200"
           >
             About Me
           </a>
           <a
             href="workexperience"
-            className="hover:text-green-500 hover:scale-105 transition duration-200"
+            className="hover:text-purple-500 hover:scale-105 transition duration-200"
           >
             Work Experience
           </a>
           <a
             href="projects"
-            className="hover:text-green-400 hover:scale-105 transition duration-200"
+            className="hover:text-purple-400 hover:scale-105 transition duration-200"
           >
             Projects
           </a>
           <a
             href="links"
-            className="hover:text-green-400 hover:scale-105 transition duration-200"
+            className="hover:text-purple-400 hover:scale-105 transition duration-200"
           >
             Links
           </a>
