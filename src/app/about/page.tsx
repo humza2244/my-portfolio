@@ -1,11 +1,16 @@
 'use client'
 import Navbar from '../components/navbar'
 import ParticlesComponent from '../components/particles'
-import TypeWriterEffect from 'react-typewriter-effect'
 import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
 import { ShootingStars } from '../components/ShootingStars'
 import ResumeButton from '../components/newbutton'
+import dynamic from 'next/dynamic'
+
+const TypeWriterEffect = dynamic(() => import('react-typewriter-effect'), {
+  ssr: false
+})
+
 
 
 export default function AboutPage() {
