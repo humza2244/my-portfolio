@@ -5,6 +5,7 @@ import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
 import { ShootingStars } from '../components/ShootingStars'
 import { cn } from '../lib/utils'
+import ResumeButton from '../components/newbutton'
 
 
 const icons = [
@@ -29,6 +30,7 @@ export default function Home() {
       <Navbar />
       <BottomNavbar/>
       <ShootingStars quantity={40} />
+      <ResumeButton/>
       
 
       <div className="relative w-full h-screen overflow-hidden">

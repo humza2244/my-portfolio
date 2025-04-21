@@ -5,7 +5,7 @@ import TypeWriterEffect from 'react-typewriter-effect'
 import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
 import { ShootingStars } from '../components/ShootingStars'
-import ResumeButton from '../components/resumebutton'
+import ResumeButton from '../components/newbutton'
 
 
 export default function AboutPage() {
