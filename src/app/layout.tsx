@@ -1,8 +1,10 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'Humza Baig Portfolio',
+  title: "Humza Baig | Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -14,3 +16,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+
+
