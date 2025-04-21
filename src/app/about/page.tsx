@@ -1,4 +1,5 @@
 'use client'
+
 import Navbar from '../components/navbar'
 import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
@@ -7,11 +8,10 @@ import { ShootingStars } from '../components/ShootingStars'
 import ResumeButton from '../components/newbutton'
 import dynamic from 'next/dynamic'
 
+// Dynamically import the typewriter effect with SSR disabled
 const TypeWriterEffect = dynamic(() => import('react-typewriter-effect'), {
-  ssr: false
+  ssr: false,
 })
-
-
 
 export default function AboutPage() {
   return (
@@ -20,8 +20,7 @@ export default function AboutPage() {
       <ParticlesComponent id="particles" />
       <ShootingStars quantity={30} />
       <BottomNavbar />
-      <ResumeButton/>
-      
+      <ResumeButton />
 
       {/* Image container with glowing animated border */}
       <div className="fixed top-[25%] left-[6%] w-[20vw] h-[55vh] rounded-xl border-4 border-purple-500 shadow-[0_0_25px_5px_rgba(128,0,128,0.5)] overflow-hidden animate-float z-50 duration-500 hover:scale-104">
@@ -37,6 +36,7 @@ export default function AboutPage() {
       {/* Typewriter text on the right */}
       <div className="h-screen w-full flex items-center justify-start">
         <div className="text-white text-2xl font-mono w-[50%] ml-[35%] whitespace-pre-line animate-float delay-[0.5s] z-50">
+          {/* @ts-ignore */}
           <TypeWriterEffect
             textStyle={{
               fontFamily: 'monospace',
@@ -45,20 +45,19 @@ export default function AboutPage() {
             }}
             startDelay={200}
             cursorColor="white"
-            text="Hi there, I'm Humza Baig — I'm a computer science student at Wilfrid Laurier University 
-      who loves creativity, coding, and keeping up with the latest technologies. I'm all about creating awesome stuff, 
-      be it stylish mobile apps, clean UI/UX, or going head-first into the realm of iOS development and web3. 
-      Crypto? Bring it on — Solana, Ethereum, Bitcoin — I'm all about discovering the future of decentralized tech. 
-      When I'm not surrounded by code, I'm either making my 3D models real with my printer, drawing up interfaces, 
-      or conceptualizing my next grand design. Offline, you can find me outdoors playing soccer, motorcycling, 
-      playing cricket, or gaming in rainy weather. I'm constantly seeking challenging experiences, new skills, 
-      and methods of leveling up — both technologically and personally!"
+            text={`Hi there, I'm Humza Baig — I'm a computer science student at Wilfrid Laurier University 
+who loves creativity, coding, and keeping up with the latest technologies. I'm all about creating awesome stuff, 
+be it stylish mobile apps, clean UI/UX, or going head-first into the realm of iOS development and web3. 
+Crypto? Bring it on — Solana, Ethereum, Bitcoin — I'm all about discovering the future of decentralized tech. 
+When I'm not surrounded by code, I'm either making my 3D models real with my printer, drawing up interfaces, 
+or conceptualizing my next grand design. Offline, you can find me outdoors playing soccer, motorcycling, 
+playing cricket, or gaming in rainy weather. I'm constantly seeking challenging experiences, new skills, 
+and methods of leveling up — both technologically and personally!`}
             typeSpeed={40}
             hideCursorAfterText={true}
           />
         </div>
       </div>
-
     </>
   )
 }
