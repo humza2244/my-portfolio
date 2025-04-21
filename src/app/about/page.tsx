@@ -1,5 +1,4 @@
 'use client'
-
 import Navbar from '../components/navbar'
 import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
@@ -8,9 +7,9 @@ import { ShootingStars } from '../components/ShootingStars'
 import ResumeButton from '../components/newbutton'
 import dynamic from 'next/dynamic'
 
-// Dynamically import the typewriter effect with SSR disabled
+
 const TypeWriterEffect = dynamic(() => import('react-typewriter-effect'), {
-  ssr: false,
+  ssr: false
 })
 
 export default function AboutPage() {
@@ -36,7 +35,6 @@ export default function AboutPage() {
       {/* Typewriter text on the right */}
       <div className="h-screen w-full flex items-center justify-start">
         <div className="text-white text-2xl font-mono w-[50%] ml-[35%] whitespace-pre-line animate-float delay-[0.5s] z-50">
-          {/* @ts-ignore */}
           <TypeWriterEffect
             textStyle={{
               fontFamily: 'monospace',
