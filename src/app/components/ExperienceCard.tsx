@@ -5,7 +5,7 @@ interface ExperienceCardProps {
     summary: string
     details: string
     skills?: string
-    imageSrcs?: string[] // ✅ updated to accept multiple images
+    imageSrcs?: string[] 
   }
   
   export default function ExperienceCard({
@@ -15,7 +15,7 @@ interface ExperienceCardProps {
     summary,
     details,
     skills,
-    imageSrcs, // ✅ grab array
+    imageSrcs, 
   }: ExperienceCardProps) {
     return (
       <div className="bg-[#1a1a1a] text-white p-5 rounded-xl shadow-lg border border-purple-600 mb-6 transition-all duration-300 ease-in-out">
@@ -27,7 +27,7 @@ interface ExperienceCardProps {
         <p className="mt-3 text-sm text-gray-300">{details}</p>
         {skills && <p className="mt-3 text-sm text-gray-300">{skills}</p>}
   
-        {/* ✅ Left-aligned image section */}
+        {/*Left-aligned image section */}
         {imageSrcs && imageSrcs.length > 0 && (
         <div className="w-full mt-4 !text-left">
             <div className="flex flex-wrap gap-3 justify-start items-start !text-left !mx-0 !px-0">

@@ -39,9 +39,10 @@ export default function ExperiencePage() {
           real-time filtering, red-flag detection, and portfolio breakdowns. The app emphasizes modularity, 
           responsiveness, and clean state management, allowing for smooth performance even under rapid data 
           updates. STELLAR is currently in development and showcases a deep integration of blockchain data 
-          pipelines, financial analytics, and mobile-first UX design within the Solana ecosystem."
+          pipelines, financial analytics, and mobile-first UX design within the Solana ecosystem. FOR A DEMO, 
+          PLEASE DO NOT HESITATE TO REACH OUT"
 
-          imageSrcs={["/discord.png", "/python.png"]}
+          imageSrcs={["/stellar1.jpg", "/stellar2.jpg", "/stellar3.jpg", "stellar4.jpg", "stellar5.jpg"]}
         />
 
         <ExperienceCard
