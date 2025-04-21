@@ -16,7 +16,7 @@ export default function ExperiencePage() {
       <BottomNavbar />
       <ResumeButton/>
 
-      <div className="p-10 max-w-4xl mx-auto text-white">
+      <div className="pt-25 pb-25 p-10 max-w-4xl mx-auto text-white">
         <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
 
         <ExperienceCard
@@ -87,16 +87,24 @@ export default function ExperiencePage() {
           application design, business intelligence tooling, stakeholder collaboration, and agile iteration within a high-stakes 
           enterprise environment."
 
-          skills = ""
+          
         />
 
         <ExperienceCard
-          title="Business Analyst Assistant"
-          company="Loblaw Digital"
+          title="Software Engineer"
+          company="Martinrea international"
           duration="Apr 2022 – Sep 2022 (6 Months)"
-          summary="Built a dynamic Power BI dashboard with Power Query, Excel, and VBA to track automotive program status, incorporating stakeholder feedback through weekly meetings."
-          details="Created dashboards with Power BI and handled VBA automation tasks. Analyzed workflow metrics and presented findings to stakeholders for operational improvements."
+          summary="Built a dynamic Power BI dashboard with Power Query, Excel, and VBA to track automotive program status, 
+          incorporating stakeholder feedback through weekly meetings."
           
+          details="At Martinrea International, I contributed to the redevelopment of the company’s internal corporate website 
+          by designing scalable vector icons in Adobe Illustrator and integrating them into the front-end architecture using 
+          semantic HTML5 and modular CSS. I played a key role in the migration process, refactoring legacy assets, reorganizing 
+          directory structures, and transferring critical resources from the old intranet system to the new platform. The updated 
+          site, deployed to the corporate server and currently in production, now supports thousands of employees. My responsibilities 
+          also included version control, asset optimization, and ensuring cross-browser compatibility and responsive design adherence 
+          within the internal network."
+
           skills = ""
         />
       </div>

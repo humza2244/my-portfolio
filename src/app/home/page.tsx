@@ -39,9 +39,9 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-mono z-50 text-white">
           <Typewriter
             words={[
-              'Software Engineer',
-              'UX/UI Designer',
-              'IOS Developer',
+              'Software Engineer?',
+              'UX/UI Designer?',
+              'Mobile Developer?',
               'Meet: Humza Baig'
             ]}
             loop={false}
