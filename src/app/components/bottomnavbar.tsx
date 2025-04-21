@@ -1,6 +1,4 @@
 'use client'
-import Navbar from '../components/navbar'
-import ParticlesComponent from '../components/particles'
 import Image from 'next/image'
 
 

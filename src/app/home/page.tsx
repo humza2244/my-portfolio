@@ -4,7 +4,6 @@ import { Typewriter } from 'react-simple-typewriter'
 import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
 import { ShootingStars } from '../components/ShootingStars'
-import { cn } from '../lib/utils'
 import ResumeButton from '../components/newbutton'
 
 
