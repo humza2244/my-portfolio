@@ -3,7 +3,7 @@ import React from 'react';
 
 const ResumeButton = () => {
   return (
-    <div className="fixed top-[3%] left-[83%] z-50">
+    <div className="hidden sm:block fixed top-[3%] left-[83%] z-50">
       <a href="/resume.pdf" download>
         <button className="w-[150px] cursor-pointer bg-gradient-to-b from-black to-purple-900 shadow-[0px_4px_32px_0_rgba(106,27,154,.70)] px-6 py-3 rounded-xl border-[2px] border-slate-500 text-white font-medium group animate-pulse">
           <div className="relative overflow-hidden w-full text-center">

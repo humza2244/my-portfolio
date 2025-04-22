@@ -14,7 +14,6 @@ export default function ExperiencePage() {
       <ParticlesComponent id="particles" />
       <ShootingStars quantity={30} />
       <BottomNavbar />
-      <ResumeButton/>
 
       <div className="pt-25 pb-25 p-10 max-w-4xl mx-auto text-white">
         <h1 className="text-4xl font-bold mb-8">Work Experience</h1>

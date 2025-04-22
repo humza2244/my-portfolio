@@ -4,7 +4,6 @@ import ExperienceCard from '../components/ExperienceCard'
 import ParticlesComponent from '../components/particles'
 import { ShootingStars } from '../components/ShootingStars'
 import BottomNavbar from '../components/bottomnavbar'
-import ResumeButton from '../components/newbutton'
 
 
 export default function ExperiencePage() {
@@ -14,9 +13,8 @@ export default function ExperiencePage() {
       <ParticlesComponent id="particles" />
       <ShootingStars quantity={30} />
       <BottomNavbar />
-      <ResumeButton/>
 
-      <div className="pt-25 pb-25 p-10 max-w-4xl mx-auto text-white">
+      <div className="pt-30 pb-25 p-10 max-w-4xl mx-auto text-white">
         <h1 className="text-4xl font-bold mb-8">Projects</h1>
 
         <ExperienceCard
