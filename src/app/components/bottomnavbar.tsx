@@ -32,7 +32,7 @@ export default function BottomNavbar() {
                 </div>
 
                 <div className="duration-500 hover:scale-110">
-                    <a href=''>
+                    <a href='https://discord.com/users/676560525886226433'>
                         <Image
                             src="/discord.png"
                             alt="Humza"

@@ -50,7 +50,7 @@ When I'm not surrounded by code, I'm either making my 3D models real with my pri
 or conceptualizing my next grand design. Offline, you can find me outdoors playing soccer, motorcycling, 
 playing cricket, or gaming in rainy weather. I'm constantly seeking challenging experiences, new skills, 
 and methods of leveling up — both technologically and personally!`}
-              typeSpeed={40}
+              typeSpeed={60}
               hideCursorAfterText={true}
             />
           </div>

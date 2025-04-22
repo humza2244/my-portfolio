@@ -34,7 +34,7 @@ export default function Navbar() {
     >
 
       <div
-        className={`w-full bg-black text-white px-4 py-3 sm:py-4 flex items-center justify-between rounded-2xl transition-all duration-500 ${
+        className={`w-full bg-gradient-to-b from-black to-purple-900 text-white px-4 py-3 sm:py-4 flex items-center justify-between rounded-2xl transition-all duration-500 ${
           isMobile && isOpen ? 'rounded-b-none' : ''
         }`}
       >
