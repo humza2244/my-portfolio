@@ -4,7 +4,6 @@ import { Typewriter } from 'react-simple-typewriter'
 import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
 import { ShootingStars } from '../components/ShootingStars'
-import ResumeButton from '../components/newbutton'
 
 const icons = [
   { name: 'Python', src: '/python.png' },

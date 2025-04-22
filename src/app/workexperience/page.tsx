@@ -4,7 +4,6 @@ import ExperienceCard from '../components/ExperienceCard'
 import ParticlesComponent from '../components/particles'
 import { ShootingStars } from '../components/ShootingStars'
 import BottomNavbar from '../components/bottomnavbar'
-import ResumeButton from '../components/newbutton'
 
 
 export default function ExperiencePage() {
