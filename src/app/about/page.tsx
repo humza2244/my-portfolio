@@ -4,7 +4,6 @@ import ParticlesComponent from '../components/particles'
 import BottomNavbar from '../components/bottomnavbar'
 import Image from 'next/image'
 import { ShootingStars } from '../components/ShootingStars'
-import ResumeButton from '../components/newbutton'
 import dynamic from 'next/dynamic'
 
 const TypeWriterEffect = dynamic(() => import('react-typewriter-effect'), {
