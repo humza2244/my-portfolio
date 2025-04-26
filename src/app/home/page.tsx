@@ -26,9 +26,6 @@ export default function Home() {
     <>
       <Navbar />
       <BottomNavbar />
-
-      
-
       <ShootingStars quantity={40} />
 
       <div className="relative w-full min-h-screen overflow-hidden">

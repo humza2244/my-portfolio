@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* Resume Button (DESKTOP only) */}
         <div className="hidden sm:block">
           <a href="/resume.pdf" download>
-            <button className="w-[150px] cursor-pointer bg-gradient-to-b from-black to-purple-900 shadow-[0px_4px_32px_0_rgba(106,27,154,.70)] px-6 py-3 rounded-xl border-[2px] border-slate-500 text-white font-medium group">
+            <button className="w-[150px] cursor-pointer bg-gradient-to-b from-black to-purple-900 shadow-[0px_4px_32px_0_rgba(106,27,154,.70)] px-6 py-3 rounded-xl border-[2px] border-slate-500 text-white font-mono font-medium group">
               <div className="relative overflow-hidden w-full text-center">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
                   Resumé
