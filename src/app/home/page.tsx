@@ -16,7 +16,7 @@ const icons = [
 const iconPositions = [
   { top: '33%', left: '49%' },
   { top: '40%', left: '80%' },
-  { top: '40%', left: '13%' },
+  { top: '37%', left: '13%' },
   { top: '64%', left: '63%' },
   { top: '64%', left: '30%' }
 ]
