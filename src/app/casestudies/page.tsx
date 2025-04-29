@@ -22,7 +22,6 @@ export default function StellarCaseStudy() {
 
       <div className="relative w-full min-h-screen px-6 py-32 sm:py-40 max-w-6xl mx-auto text-white scroll-smooth">
         {/* STELLAR Case Study */}
-        {/* STELLAR Case Study */}
         <section id="stellar" className="scroll-mt-32">
           <h1 className="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
             STELLAR UX Case Study
@@ -69,7 +68,7 @@ export default function StellarCaseStudy() {
             <div className="bg-white/5 p-6 sm:col-span-2 rounded-2xl border border-purple-700 shadow-lg backdrop-blur-md duration-500 hover:scale-102">
               <h2 className="text-2xl font-semibold mb-4 text-purple-300">Final Designs</h2>
               <p className="text-base leading-relaxed mb-6">
-                Each of Home, Trending, Advanced Charts, Buy/Sell, Wallet, and even Settings was painstakingly handcrafted. It has a radiant dark color scheme, silky haptic input, and silky smooth animations. Startup founders and engineers described STELLAR as having one of the cleanest, most intuitive UIs they've ever encountered in their careers.
+                Each of Home, Trending, Advanced Charts, Buy/Sell, Wallet, and even Settings was painstakingly handcrafted. It has a radiant dark color scheme, silky haptic input, and silky smooth animations. Startup founders and engineers described STELLAR as having one of the cleanest, most intuitive UIs they&rsquo;ve ever encountered in their careers.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
                 {['stellar1.jpg', 'stellar2.jpg', 'stellar3.jpg'].map((src, idx) => (
@@ -88,7 +87,7 @@ export default function StellarCaseStudy() {
             <div className="bg-white/5 p-6 sm:col-span-2 rounded-2xl border border-purple-700 shadow-lg backdrop-blur-md duration-500 hover:scale-102">
               <h2 className="text-2xl font-semibold mb-4 text-purple-300">Reflection</h2>
               <p className="text-base leading-relaxed">
-                I'm pleased that our final experience feels so immersive, fast, and intuitive. Working on STELLAR, I learned hands-on UX validation, real-time WebSocket data troubleshooting, and design performance optimization. In next steps, we'll be adding more chain support and streamlining server costs as we find investment to continue growing development.
+                I&rsquo;m pleased that our final experience feels so immersive, fast, and intuitive. Working on STELLAR, I learned hands-on UX validation, real-time WebSocket data troubleshooting, and design performance optimization. In next steps, we&rsquo;ll be adding more chain support and streamlining server costs as we find investment to continue growing development.
               </p>
             </div>
           </div>
@@ -134,12 +133,11 @@ export default function StellarCaseStudy() {
             <div className="bg-white/5 p-6 rounded-2xl border border-purple-700 shadow-lg backdrop-blur-md sm:col-span-2 duration-500 hover:scale-102">
               <h2 className="text-2xl font-semibold mb-4 text-purple-300">Reflection</h2>
               <p className="text-base leading-relaxed">
-                This project dramatically leveled up my skills with Tailwind CSS, React, and UX design thinking. I'm proud of how fluid and personal the final experience feels. Next, I plan to add scroll animations and even tighter navbar behaviors to make the site even more dynamic.
+                This project dramatically leveled up my skills with Tailwind CSS, React, and UX design thinking. I&rsquo;m proud of how fluid and personal the final experience feels. Next, I plan to add scroll animations and even tighter navbar behaviors to make the site even more dynamic.
               </p>
             </div>
           </div>
         </section>
-
       </div>
     </>
   )
