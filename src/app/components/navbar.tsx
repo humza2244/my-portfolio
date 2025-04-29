@@ -39,17 +39,17 @@ export default function Navbar() {
         }`}
       >
         <div className="flex items-center space-x-3 font-mono text-sm">
-          <Image src="/hblogo.png" alt="HB" width={40} height={40} />
-          <span className="font-bold">Humza Baig</span>
+          <Image src="/hblogo.png" alt="HB" width={50} height={50} />
+          <span className="font-bold"></span>
         </div>
 
         {/* Desktop Nav */}
         <div className="hidden sm:flex space-x-8 font-mono text-sm">
-          <Link href="/home" className="hover:text-purple-400">Home</Link>
-          <Link href="/about" className="hover:text-purple-400">About Me</Link>
-          <Link href="/workexperience" className="hover:text-purple-400">Work Experience</Link>
-          <Link href="/projects" className="hover:text-purple-400">Projects</Link>
-          <Link href="/casestudies" className="hover:text-purple-400">Case Studies</Link>
+          <Link href="/home" className="hover:text-purple-400 duration-500 hover:scale-105">Home</Link>
+          <Link href="/about" className="hover:text-purple-400 duration-500 hover:scale-105">About Me</Link>
+          <Link href="/workexperience" className="hover:text-purple-400 duration-500 hover:scale-105">Work Experience</Link>
+          <Link href="/projects" className="hover:text-purple-400 duration-500 hover:scale-105">Projects</Link>
+          <Link href="/casestudies" className="hover:text-purple-400 duration-500 hover:scale-105">Case Studies</Link>
         </div>
 
         {/* Resume Button (DESKTOP only) */}
