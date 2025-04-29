@@ -49,6 +49,7 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-purple-400">About Me</Link>
           <Link href="/workexperience" className="hover:text-purple-400">Work Experience</Link>
           <Link href="/projects" className="hover:text-purple-400">Projects</Link>
+          <Link href="/casestudies" className="hover:text-purple-400">Case Studies</Link>
         </div>
 
         {/* Resume Button (DESKTOP only) */}
@@ -92,6 +93,7 @@ export default function Navbar() {
             <Link href="/about" onClick={() => setIsOpen(false)}>About Me</Link>
             <Link href="/workexperience" onClick={() => setIsOpen(false)}>Work Experience</Link>
             <Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
+            <Link href="/casestudies" onClick={() => setIsOpen(false)}>Case Studies</Link>
             {/* Mobile Resume Button */}
             <a href="/resume.pdf" download className="pt-2">
               <button className="w-full cursor-pointer bg-gradient-to-b from-black to-purple-900 shadow-[0px_4px_32px_0_rgba(106,27,154,.70)] px-6 py-3 rounded-xl border-[2px] border-slate-500 text-white font-medium group">
