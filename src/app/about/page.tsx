@@ -48,7 +48,7 @@ export default function AboutPage() {
 I'm deeply inspired by the worlds of Solana, Ethereum, and decentralized tech, and I love translating complex ideas into simple, beautiful interfaces. When I'm not designing or coding, I'm exploring new creative outlets — from 3D modeling to conceptualizing product ideas — always with a mindset of continuous growth, both technically and personally.
 
 Let's build experiences that don't just work — they inspire.`}
-              typeSpeed={100}
+              typeSpeed={20}
               hideCursorAfterText={true}
             />
           </div>
