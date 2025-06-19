@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface ExperienceCardProps {
     title: string
     company: string
@@ -32,10 +34,12 @@ interface ExperienceCardProps {
         <div className="w-full mt-4 !text-left">
             <div className="flex flex-wrap gap-3 justify-start items-start !text-left !mx-0 !px-0">
             {imageSrcs.map((src, index) => (
-                <img
+                <Image
                 key={index}
                 src={src}
                 alt={`${title} Screenshot ${index + 1}`}
+                width={128}
+                height={96}
                 className="w-32 h-auto rounded-md border border-gray-700"
                 />
             ))}

@@ -81,11 +81,14 @@ export default function WorkExperiencePage() {
               Transforming ideas into reality through collaborative development and innovative solutions
             </p>
           
-            <motion.div
+            </motion.div>
+
+          {/* career highlights */}
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2, duration: 1 }}
-            className="mt-32"
+            className="mb-20"
           >
             <div className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-12 hover:border-purple-400/60 transition-all duration-500">
               <h3 className="text-3xl font-bold text-white mb-8 text-center">
@@ -112,10 +115,6 @@ export default function WorkExperiencePage() {
                 </div>
               </div>
             </div>
-          </motion.div>
-
-
-
           </motion.div>
 
           {/* timeline */}

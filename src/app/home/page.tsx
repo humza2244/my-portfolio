@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Navbar from '../components/navbar'
 import { Typewriter } from 'react-simple-typewriter'
 import ParticlesComponent from '../components/particles'
@@ -14,13 +15,7 @@ const techStack = [
   { name: 'React.js', src: '/react.png' }
 ]
 
-const positions = [
-  { top: '25%', left: '15%' },
-  { top: '20%', left: '80%' },
-  { top: '70%', left: '20%' },
-  { top: '65%', left: '75%' },
-  { top: '45%', left: '85%' }
-]
+
 
 export default function Home() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
@@ -103,9 +98,11 @@ export default function Home() {
                     
                     {/* tech icon */}
                     <div className="relative bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-6 group-hover:border-purple-400/60 transition-all duration-300 group-hover:scale-110">
-                      <img
+                      <Image
                         src={tech.src}
                         alt={tech.name}
+                        width={64}
+                        height={64}
                         className="w-16 h-16 drop-shadow-lg"
                       />
                     </div>
@@ -136,9 +133,11 @@ export default function Home() {
                     
                     {/* tech icon */}
                     <div className="relative bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 group-hover:border-purple-400/60 transition-all duration-300 group-hover:scale-110 flex flex-col items-center">
-                      <img
+                      <Image
                         src={tech.src}
                         alt={tech.name}
+                        width={48}
+                        height={48}
                         className="w-12 h-12 drop-shadow-lg mb-2"
                       />
                       <span className="text-white text-xs font-mono">{tech.name}</span>
@@ -155,7 +154,7 @@ export default function Home() {
               Who Am I? 🚀
             </h2>
             <p className="text-white font-mono text-lg leading-relaxed text-center">
-              I'm a <span className="text-purple-400 font-bold">Computer Science student</span> at Wilfrid Laurier University passionate about 
+              I&apos;m a <span className="text-purple-400 font-bold">Computer Science student</span> at Wilfrid Laurier University passionate about 
               <span className="text-pink-400"> blockchain technology</span>, <span className="text-purple-400">mobile development</span>, and 
               <span className="text-pink-400"> UI/UX design</span>. Currently building STELLAR - a mobile-first crypto trading app for Solana! 
             </p>

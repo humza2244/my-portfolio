@@ -105,7 +105,7 @@ export default function ProjectsPage() {
 
           {/* projects grid */}
           <div className="space-y-16">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div
                 key={project.id}
                 className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-8 hover:border-purple-400/60 transition-all duration-500"
@@ -192,7 +192,7 @@ export default function ProjectsPage() {
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold mb-4 text-purple-300">Tech Stack</h3>
                   <div className="flex flex-wrap gap-3">
-                    {project.tech.map((tech, techIndex) => (
+                    {project.tech.map((tech) => (
                       <span
                         key={tech}
                         className="px-4 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-full text-purple-300 font-mono text-sm hover:border-purple-400/50 hover:scale-105 transition-all duration-300"
@@ -242,10 +242,10 @@ export default function ProjectsPage() {
           <div className="text-center mt-20">
             <div className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-12 hover:border-purple-400/60 transition-all duration-500">
               <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                Let's Build Something Amazing! 🚀
+                Let&apos;s Build Something Amazing! 🚀
               </h3>
               <p className="text-purple-300 font-mono text-lg mb-8 max-w-2xl mx-auto">
-                I'm always excited to work on new projects and collaborate with fellow developers and designers.
+                I&apos;m always excited to work on new projects and collaborate with fellow developers and designers.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a

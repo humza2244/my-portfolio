@@ -122,35 +122,35 @@ export default function AboutPage() {
               <div className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-8 hover:border-purple-400/60 transition-all duration-500">
                 <h3 className="text-2xl font-semibold mb-6 text-purple-300">My Story</h3>
                 <div className="space-y-4 font-mono text-base leading-relaxed">
-                  <p>
-                    Hey there! I'm <span className="text-purple-400 font-bold">Humza</span>, I'm a proud Computer Science student at 
-                    <span className="text-pink-400"> Wilfrid Laurier University</span>. I enjoy building things that positively impact people's lives.
-                  </p>
-                  <p>
-                    Right now, I'm pouring my heart into <span className="text-purple-400 font-bold">STELLAR</span> - a mobile-first crypto trading app 
-                    for the Solana blockchain. The project is all about speed, simplicity, and beautiful design. I love this project because I believe 
-                    crypto trading should never be complicated or ugly. 
-                  </p>
-                  <p>
-                  When I am not coding, I enjoy sketching UI mockups, exploring the latest blockchain innovations, or gaming while thinking 
-                  of my next idea.
-                  </p>
-                  <p>
-                    I'm a firm believer that <span className="text-pink-400">beautiful code</span> and <span className="text-purple-400">stunning design</span> 
-                    go hand in hand. There is magic in creating products that people don't simply use, they enjoy using.
-                  </p>
+                                      <p>
+                      Hey there! I&apos;m <span className="text-purple-400 font-bold">Humza</span>, I&apos;m a proud Computer Science student at 
+                      <span className="text-pink-400"> Wilfrid Laurier University</span>. I enjoy building things that positively impact people&apos;s lives.
+                    </p>
+                    <p>
+                      Right now, I&apos;m pouring my heart into <span className="text-purple-400 font-bold">STELLAR</span> - a mobile-first crypto trading app 
+                      for the Solana blockchain. The project is all about speed, simplicity, and beautiful design. I love this project because I believe 
+                      crypto trading should never be complicated or ugly. 
+                    </p>
+                    <p>
+                   When I am not coding, I enjoy sketching UI mockups, exploring the latest blockchain innovations, or gaming while thinking 
+                   of my next idea.
+                    </p>
+                    <p>
+                      I&apos;m a firm believer that <span className="text-pink-400">beautiful code</span> and <span className="text-purple-400">stunning design</span> 
+                      go hand in hand. There is magic in creating products that people don&apos;t simply use, they enjoy using.
+                    </p>
                 </div>
               </div>
 
               {/* current focus */}
               <div className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-8 hover:border-purple-400/60 transition-all duration-500">
-                <h3 className="text-2xl font-semibold mb-6 text-purple-300">What I'm Up To</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-purple-300">What I&apos;m Up To</h3>
                 <div className="space-y-4 font-mono">
                   <div className="flex items-start gap-3">
                     <span className="text-2xl"></span>
                     <div>
                       <p className="font-bold text-purple-400">Building STELLAR</p>
-                      <p className="text-sm opacity-80">My flagship mobile-first crypto trading app for Solana. It's going to change everything.</p>
+                      <p className="text-sm opacity-80">My flagship mobile-first crypto trading app for Solana. It&apos;s going to change everything.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   <p>Land an incredible software engineering role at a company that values innovation</p>
                   <p>Build products that genuinely impact millions of users worldwide</p>
                   <p>Become a React Native expert and master mobile development</p>
-                  <p>Keep pushing the boundaries of what's possible in UX/UI design</p>
+                  <p>Keep pushing the boundaries of what&apos;s possible in UX/UI design</p>
                 </div>
               </div>
             </div>
@@ -218,11 +218,11 @@ export default function AboutPage() {
           <div className="text-center mb-20">
             <div className="bg-black/40 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-12 hover:border-purple-400/60 transition-all duration-500">
               <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                Let's Connect!
+                Let&apos;s Connect!
               </h3>
               <p className="text-purple-300 font-mono text-lg mb-8 max-w-2xl mx-auto">
-                I'm always excited to discuss new opportunities, collaborate on cool projects, 
-                or just chat about the latest in tech and design. Don't be a stranger!
+                I&apos;m always excited to discuss new opportunities, collaborate on cool projects, 
+                or just chat about the latest in tech and design. Don&apos;t be a stranger!
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a
