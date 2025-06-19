@@ -11,6 +11,7 @@
   "dependencies": {
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.7.4",
     "motion": "^12.7.4",
@@ -22,7 +23,9 @@
     "react-simple-typewriter": "^5.0.1",
     "react-typewriter-effect": "^1.1.0",
     "styled-components": "^6.1.17",
-    "tailwind-merge": "^3.2.0"
+    "tailwind-merge": "^3.2.0",
+    "tsparticles": "^3.8.1",
+    "tsparticles-engine": "^2.12.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
